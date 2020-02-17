@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             tableView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor)
         ])
 //        tableView.delegate = self
-        tableView.dataSource = self
+        tableView.dataSource = self // forgotten step in tutorial... tell tableView where to find its data
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
